@@ -1,0 +1,15 @@
+
+.input-field{
+    font-family: 'Source Sans Pro';
+    font-style: normal;
+    font-weight: 400;
+    color: #2b4057f3;
+    font-size: 1.2em;
+    padding: 3%;
+    padding-left: 4%;
+    width: 21vw;
+    border: 3px solid black;
+    border-radius: 10px;
+    position: relative;
+    padding-right: 12%;
+}

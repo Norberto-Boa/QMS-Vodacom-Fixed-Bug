@@ -1,0 +1,228 @@
+/* Homepage.module.css */
+.homepageContainer {
+  padding: 20px;
+  margin-top: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+
+.mainHead {
+  font-size: 44px;
+  color: #333;
+  text-align: center;
+}
+
+.topSearch {
+  display: flex;
+  width: 100%;
+  margin-top: 10px;
+  padding: 0 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.one {
+  flex: 2;
+}
+
+.two,
+.three {
+  flex: 1;
+}
+
+.topSearch input {
+  font-size: 18px;
+  border: none;
+  background: transparent;
+  height: 100%;
+  width: 100%;
+  outline: none;
+}
+
+.topSearch > div {
+  border-radius: 20px;
+  width: 95%;
+  margin-right: 10px;
+  padding: 20px;
+  background: rgba(48, 77, 109, 0.1);
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+::placeholder {
+  color: #192839;
+}
+
+.iconInput {
+  width: 30px;
+  height: 30px;
+  font-size: 50px;
+  color: #192839;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.iconInput svg {
+  display: block;
+}
+
+.card {
+  background: #ffffff;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 40px;
+  width: 100%;
+  height: fit-content;
+  color: #192839;
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.head {
+  font-size: 28px;
+  text-align: center;
+}
+
+.icons {
+  width: 36px;
+  height: 36px;
+  margin-left: 10px;
+}
+
+.roundNo {
+  margin-left: 5px;
+  font-size: 12px;
+  display: inline-block;
+  background-color: #e60000;
+  color: #faeded;
+  width: 24px;
+  height: 24px;
+  padding: 4px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 600;
+  position: relative;
+  top: -10px;
+}
+
+.yellowCapsule {
+  background: #f9db6d;
+  border-radius: 22px;
+  width: 65%;
+  text-align: center;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  padding: 5px;
+  display: block;
+}
+
+.yellowCapsule2 {
+  background: #f9db6d;
+  border-radius: 22px;
+  width: 30%;
+  font-size: 16px;
+  padding: 4px 12px;
+}
+
+.enterButton,
+.leaveButton {
+  color: #faeded;
+  background: #e60000;
+  border-radius: 15px;
+  border: none;
+  padding: 4px 12px;
+  width: 70%;
+  text-align: center;
+  margin-top: 4px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin: 5px auto;
+  display: block;
+}
+
+.enterButton:hover,
+.leaveButton:hover {
+  box-shadow: 0px 4px 15px #f5b6b6;
+}
+
+.leaveButton {
+  background: #ff8898;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 1rem 0 3rem;
+}
+
+.cardWrapper {
+  flex: 1 1 calc(25% - 1rem); /* Four columns with space in between */
+  max-width: calc(20% - 1rem); /* Ensure the max width for each card */
+  box-sizing: border-box;
+}
+
+@media (max-width: 1150px) {
+  .cardWrapper {
+    flex: 1 1 calc(33.33% - 1rem); /* Three columns */
+    max-width: calc(33.33% - 1rem);
+  }
+}
+@media (max-width: 950px) {
+  .cardWrapper {
+    flex: 1 1 calc(50% - 1rem); /* Two columns */
+    max-width: calc(50% - 1rem);
+  }
+}
+@media (max-width: 680px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .cardWrapper {
+    flex: 1 1 100%; /* Single column */
+    max-width: 100%;
+  }
+}
+
+.listElement {
+  background: rgba(255, 255, 255, 0.1);
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 15px;
+  font-size: 24px;
+  padding: 4px 12px;
+  margin-bottom: 20px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.leaveBtn {
+  margin: 4px;
+  padding: 4px 12px;
+  font-size: 24px;
+  background: #ff8898;
+  border-radius: 15px;
+  border: none;
+  cursor: pointer;
+}
+.leaveBtn:hover{
+  box-shadow: 0px 4px 15px #f5b6b6;
+}
+
+.elements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+  margin: 1rem 0 3rem;
+  width: 100%;
+}
